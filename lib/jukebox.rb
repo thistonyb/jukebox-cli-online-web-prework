@@ -18,13 +18,9 @@ def help
 - exit : exits this program"
 end
 
-def play(songs)
-  if index < 0 || index > 9
-    puts "Invalid input, please try again"
-  else
-    songs.each_with_index do |song, index|
-    index += 1
-    puts "#{index}." + song
-    end
+def list(songs)
+  songs.each_with_index do |song, index|
+  index += 1
+  puts "#{index}." + song
   end
 end

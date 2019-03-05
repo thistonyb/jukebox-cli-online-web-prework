@@ -19,8 +19,12 @@ def help
 end
 
 def play(songs)
-  songs.each_with_index do |song, index|
+  if index < 0 || index > 9
+    puts "Invalid input, please try again"
+  else
+    songs.each_with_index do |song, index|
     index += 1
     puts "#{index}." + song
+    end
   end
 end

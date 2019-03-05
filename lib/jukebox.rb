@@ -49,9 +49,9 @@ def run
     user_command = gets.chomp
     case user_command
       when "list"
-        list
+        list(songs)
       when "play"
-        play
+        play(songs)
       when "help"
         help
     end
